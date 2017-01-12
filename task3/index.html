@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="myform">
+  <h3>Enter your values: </h3>
+    <form id="former" method="post" onsubmit="return false">
+        <div class="form-group">
+            <label for = "name">Name:</label>
+            <input type="text" class="form-control" id="name" pattern="[A-Za-z]{10,}" required>
+        </div>
+        <div>
+            <label for = "age">Age:</label>
+            <input type="text" class="form-control" id="age" pattern="[0-9]{1,3}" required>
+        </div>
+        <div>
+        	<label for = "sex">Sex:</label>
+        	<input type="text" class="form-control" id="sex" pattern="\b(Male|Female|M|F)\b" required>
+        </div>
+        <div>
+        	<label for = "date">Date:</label>
+        	<input type="text" class="form-control" id="date" pattern="(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d" required>
+        </div>
+        <div>
+        	<label for = "adress">Adress:</label>
+        	<input type="text" class="form-control" id="adress" pattern="[A-Za-z]{10,}" required>
+        </div>
+        <div>
+        	<label for = "phone">Phone:</label>
+        	<input type="text" class="form-control" id="phone" pattern="[0-9]{9,12}" required>
+        </div>
+        <div>
+        	<label for = "email">Email:</label>
+        	<input type="text" class="form-control" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+        </div>
+        &nbsp;
+        <div>
+        	<input class="btn btn-default" type="submit" id="add" value="Add"">
+        </div>
+    </form> 
+</div>
+&nbsp;
+<div id="mydata">
+<h3>Current inputs that have been saved:</h3>
+  <table class="table" id="myTableData"  border="1" cellpadding="2">
+      <tr class="success">
+        <td>&nbsp;</td>
+        <td><b>Name</b></td>
+        <td><b>Age</b></td>
+        <td><b>Sex</b></td>
+        <td><b>Date</b></td>
+        <td><b>Adress</b></td>
+        <td><b>Phone</b></td>
+        <td><b>Email</b></td>
+      </tr>
+  </table>
+&nbsp;
+ </div>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/additional-methods.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src = "script.js"></script>
+</body>
+</html>
+
